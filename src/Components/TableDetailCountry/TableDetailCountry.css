@@ -1,0 +1,13 @@
+.table .thead-gray th {
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+}
+
+.div-overflow-table-country {
+    overflow-y: auto;
+    width: 600px;
+}
+.th-table-country{
+    font-weight: normal;
+}
+

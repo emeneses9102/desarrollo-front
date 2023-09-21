@@ -1,0 +1,77 @@
+.footer .container{
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion_datos{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.seccion_datos h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.seccion_datos span{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.seccion_datos span:hover{
+    color: #FB9509;
+}
+.redes{
+    display: flex;
+    padding: 30px 0px;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+.miembros{
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.miembros hr{
+    margin-top: 0px;
+}
+.container-logos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.author{
+    background-color: #E8E6E6;
+}
+.author .container{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: auto;
+}
+
+@media (max-width: 1200px) {
+    .footer .container{
+        padding: 45px 60px;
+    }
+    .seccion_datos{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    .footer .container{
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer .seccion_datos{
+        align-items: center;
+    }
+}

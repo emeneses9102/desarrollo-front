@@ -1,0 +1,77 @@
+{
+  "name": "innovapayfront",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@canvasjs/charts": "^3.7.19",
+    "@canvasjs/react-charts": "^1.0.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@faker-js/faker": "^8.0.2",
+    "@iconscout/unicons": "^4.0.8",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
+    "@mui/styles": "^5.3.0",
+    "axios": "^0.25.0",
+    "chart.js": "^4.4.0",
+    "framer-motion": "^6.3.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.3",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-input-pin-code": "^1.2.0",
+    "react-material-ui-form-validator": "^3.0.0",
+    "react-number-format": "^4.9.3",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "serve": "^13.0.2",
+    "styled-components": "^5.3.5",
+    "sweetalert2": "^11.4.9",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:dev": "serve -s build -l 4000",
+    "start:prod": "serve -s build -l 8000",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "plugins": ["jsx-a11y"],
+    "extends": [
+      "react-app"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "jsx-a11y/anchor-is-valid": "off", 
+      "jsx-a11y/anchor-has-content": "off",
+      "jsx-a11y/iframe-has-title" : "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "os": "^0.1.2"
+  }
+}

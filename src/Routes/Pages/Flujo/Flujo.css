@@ -1,0 +1,24 @@
+.pais-asistido{
+    background-color: #EDEBEB !important;
+    background-image: radial-gradient(52% 100% at top, #ECDED2 100%,#0000 100%);
+}
+.pais-asistente{
+    background-color: #EDEBEB !important;
+    background-image: radial-gradient(52% 100% at top, #DBDAEB 100%,#0000 100%);
+}
+.pais-transito{
+    background-color: #EDEBEB !important;
+    background-image: radial-gradient(52% 100% at top, #DCEAD4 100%,#0000 100%);
+}
+
+@media (max-width: 768px) {
+    .pais-asistido{
+        background-color: #ECDED2 !important;   
+    }
+    .pais-asistente{
+        background-color: #DBDAEB !important;  
+    }
+    .pais-transito{
+        background-color: #DCEAD4 !important;  
+    }
+}

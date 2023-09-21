@@ -1,0 +1,69 @@
+.visor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.visor .container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.titulo-visor{
+    font-family: syne, sans-serif;
+    font-size: 40px;
+}
+div .visor{
+    overflow:hidden;
+    height:100%;
+    width:100%
+}
+#optomaFeed{
+    position:absolute;
+    clip:rect(170px,1300px,704px,10px);
+    top:-40px;
+
+}
+
+@media (max-width: 992px) {
+    iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width:770px) {
+    iframe{
+        width: 100%;
+    }
+    .visor .container{
+        max-width: 95%;
+    }
+}
+
+@media (max-width:600px) {
+    #optomaFeed{
+        position:absolute;
+        clip: rect(260px,1300px,764px,100px)!important;
+        top: -180px;
+        left: -50px;
+    }
+}
+@media (max-width:550px) {
+    #optomaFeed{
+        position:absolute;
+        clip: rect(260px,1300px,764px,80px)!important;
+        top: -180px;
+        left: -50px;
+    }
+}
+@media (max-width:450px) {
+    #optomaFeed{
+        position:absolute;
+        clip: rect(310px,1300px,764px,0px)!important;
+        top: -180px;
+        left: 0px;
+    }
+}

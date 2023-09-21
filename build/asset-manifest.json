@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5becbf0a.css",
+    "main.js": "./static/js/main.535e2f04.js",
+    "static/media/Cards.png": "./static/media/Cards.6d7ac6eba9be66e8c6d7.png",
+    "static/media/mision.webp": "./static/media/mision.dc7f4e10efc80a6eeb6e.webp",
+    "static/media/eventos.webp": "./static/media/eventos.6636e01d6679076b134d.webp",
+    "service-worker.js": "./service-worker.js",
+    "index.html": "./index.html",
+    "main.5becbf0a.css.map": "./static/css/main.5becbf0a.css.map",
+    "main.535e2f04.js.map": "./static/js/main.535e2f04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5becbf0a.css",
+    "static/js/main.535e2f04.js"
+  ]
+}

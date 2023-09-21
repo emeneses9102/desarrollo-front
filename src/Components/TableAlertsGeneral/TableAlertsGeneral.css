@@ -1,0 +1,39 @@
+.table-alerts td {
+    background-color: #C4E1F8;
+}
+
+.table-data-country {
+    background-color: #9ECDF4;
+    margin:auto 0;
+    height: 40px;
+}
+
+.table-header th {
+    background-color: #3D9BE9;
+    margin:auto 0;
+    height: 40px;
+    font-weight: normal;
+}
+.table-alerts {
+    font-family: syne,sans-serif;
+    width: 700px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.div-table{
+    display: flex;
+    justify-content: center;
+}
+.div-overflow-table{
+    overflow-y: auto;
+}
+.div-table-align-text{
+    text-align: left;
+}
+.margin-left-text{
+    margin-left: 15px;
+}
+.th-width{
+    width: 180px;
+}
+

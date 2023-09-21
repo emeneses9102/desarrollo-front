@@ -1,0 +1,139 @@
+
+.layer{
+    background-color: #333CA9;
+    font-size: .8rem;
+    color: white;
+}
+.layer .contenedor{
+    padding: 22px;
+    width: auto;
+}
+.navbar .contenedor{
+    width: 100%;
+}
+.fa-globe{
+    font-size: 1.3rem;
+}
+.layer .links{
+    margin-right: 40px;
+}
+.layer .links a{
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-logo,.links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.contenedor-logo img{
+ max-width: 230px;
+ margin-left: -20px;
+}
+.contenedor-input{
+    background-color: #E8E6E6;
+    border-radius: 10px;
+}
+.contenedor-input input{
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    color: black !important;
+    width: 250px;
+}
+.contenedor-input input:hover{
+    background-color: white;
+    border: 1px solid #E8E6E6;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.contenedor-input button{
+    border: none;
+    color: white;
+    background-color: #F98109;
+    padding: 8px 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+.links{
+    margin-right: 10px;
+}
+.links span{
+    color: #5E9EFE;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.fa-plus{
+    color: #3CA713;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+.link-asistencia{
+    display: flex;
+    align-items: center;
+}
+.fa-circle-user{
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+.link-login{
+    display: flex;
+    align-items: center;
+    font-size: 1rem !important;
+    color: black !important;
+}
+.link-login:hover{
+    color: #dddddd;
+}
+.links-navbar span{
+    cursor: pointer;
+}
+@media (max-width: 992px) {
+    .nav-initial{
+        display: none;
+    }
+    .__container .links{
+        font-size: 1.2rem;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .__navbar{
+        background-color: white!important;
+        padding: 0.5rem 0rem!important ;
+    }
+    .__container{
+        background-color: #E8E6E6!important;
+    }
+    .container-button{
+        border-bottom: 1px solid #E8E6E6;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-toggler{
+        height: 50px;
+        border: 1px solid #E8E6E6;
+        border-radius: 10px;
+        outline:none;
+    }
+    .layer .links{
+        margin-right: initial;
+    }
+  }
+  @media (max-width: 575px) {
+    
+    .contenedor-layer{
+        flex-direction: column!important;
+        
+    }
+    .layer .links{
+        margin-top: 10px;
+        justify-content: end;
+    }
+}
