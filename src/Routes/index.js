@@ -22,7 +22,7 @@ const Routes = () => {
     <Header/>
       <Switch>
         <Route exact path="/auth" element={<Auth />} />
-        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/inicio" element={<Inicio/>} />
         <Route exact path="/validate" element={<PinCode />} />
         <Route
           exact
