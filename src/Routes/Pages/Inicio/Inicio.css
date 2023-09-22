@@ -26,6 +26,11 @@
 .section-icons span img{
     width: 47px;
 }
+.feed div{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
 .flujo,.mapa, .noticias, .eventos, .detalles,.cooperantes,  .boletin{
     padding: 30px;
@@ -37,6 +42,9 @@
 }
 .cooperantes,.boletin{
     padding: 0px !important;
+}
+.noticias{
+    padding: 10px;
 }
 .flujo h2{
     font-size: 40px;
@@ -486,6 +494,20 @@ section .icono-user:hover{
     }
     .eventos{
         padding: 20px;
+    }
+    
+    .feed{
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .facebook1{
+        display: none !important;
+    }
+    .facebook2{
+        display: block !important;
     }
     
     

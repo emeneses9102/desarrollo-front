@@ -1,6 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Inicio.css'
+import { TwitterTimelineEmbed } from 'react-twitter-embed'
 const Inicio = () => {
+  const [anchoDataWidth, setAnchoDataWidth] = useState("500");
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Modifica el valor de anchoDataWidth en función del tamaño de la pantalla.
+      if (window.innerWidth <= 600) {
+        setAnchoDataWidth("300"); // Cambia a un ancho más pequeño cuando la pantalla es pequeña.
+      } else {
+        setAnchoDataWidth("500"); // Cambia a un ancho más grande cuando la pantalla es más grande.
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className='inicio'>
       <div className="container-fluid contenedor-global">
@@ -65,44 +86,44 @@ const Inicio = () => {
           <h2>Noticias</h2>
           <div className="contenedor-noticias ">
             <div className=" m-2 row m-0">
-              <div className="section-noticia col-md-7">
-                <section>
-                  <span className='icono icono-pen'><i className="fa-solid fa-pen"></i></span>
-                  <div>
-                    <span className='noticia-title'>Hoy comienza la temporada ciclónica del Atlántico del 2023</span>
-                    <span>"Edit Text" or double click here to change the text and make it your own. You can also adjust the paragraph's font, size and color so it fits your website’s theme.​</span>
-                  </div>
-                </section>
-                <section>
-                  <span className='icono icono-mail'><i className="fa-regular fa-envelope"></i></span>
-                  <div>
-                    <span className='noticia-title'>Claudia Herrera forma parte de la Reunión de Alto Nivel para la Revisión de Mitad de Período del Marco de Sendai </span>
-                    <span>This is a great place to tell users a story about your website and let them know more about what you offer. You may want to share information about your company's background, your team, or the services you provide.​</span>
-                  </div>
-                </section>
-              </div>
-              <div className="section-img col-md-5 p-0">
-                <img src="assets/img/new.png" alt="noticia" />
+              <div className="container feed">
+              <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="CEPREDENAC"
+              options={{height: 800}}
+              />
               </div>
             </div>
-            <div className="container">
-              <div className="section-noticia" style={{padding:'0px'}}>
-                <section >
-                  <span className='icono icono-user'><i className="fa-regular fa-user"></i></span>
-                 <div>
-                 <span className='noticia-title'>Gobierno de la República de China (Taiwán) realizó la ejecución del Cuarto Desembolso del Proyecto de Consolidación de las Capacidades Institucionales del SICA</span>
-                  <span>This is a great place to tell users a story about your website and let them know more about what you offer. You may want to share information about your company's background, your team, or the services you provide.​</span>
-                 </div>
-                </section>
-                <section className='column'>
-                  <span className='icono icono-pen'><i className="fa-solid fa-pen"></i></span>
-                  <div>
-                    <span className='noticia-title'>Taller sobre el procedimiento regional de facilitación de tránsito terrestre para envíos de socorro</span>
-                    <span>This is a great place to tell users a story about your website and let them know more about what you offer. You may want to share information about your company's background, your team, or the services you provide.​</span>
-                  </div>
-                </section>
+            <div className=" m-2 row m-0 feed">
+              <div 
+                className="fb-page facebook1" 
+                data-href="https://www.facebook.com/CEPREDENAC/" 
+                data-tabs="timeline" 
+                data-width="500" 
+                data-height="500" 
+                data-small-header="false" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/CEPREDENAC/" className="fb-xfbml-parse-ignore">
+                  <a href="https://www.facebook.com/CEPREDENAC/">CEPREDENAC</a>
+                  </blockquote>
+              </div>
+              <div 
+                className="fb-page facebook2" 
+                style={{display:'none'}}
+                data-href="https://www.facebook.com/CEPREDENAC/" 
+                data-tabs="timeline" 
+                data-width="340" 
+                data-height="500" 
+                data-small-header="false" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/CEPREDENAC/" className="fb-xfbml-parse-ignore">
+                  <a href="https://www.facebook.com/CEPREDENAC/">CEPREDENAC</a>
+                  </blockquote>
               </div>
             </div>
+            
           </div>
         </div>
         <div className="eventos">
