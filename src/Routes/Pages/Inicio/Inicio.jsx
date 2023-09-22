@@ -84,17 +84,17 @@ const Inicio = () => {
         </div>
         <div className="noticias">
           <h2>Noticias</h2>
-          <div className="contenedor-noticias ">
-            <div className=" m-2 row m-0">
+          <div className="contenedor-noticias row mt-2">
+            <div className=" m-0 col-md-6">
               <div className="container feed">
               <TwitterTimelineEmbed
               sourceType="profile"
               screenName="CEPREDENAC"
-              options={{height: 800}}
+              options={{height: 500, width:600}}
               />
               </div>
             </div>
-            <div className=" m-2 row m-0 feed">
+            <div className="m-0 feed col-md-6">
               <div 
                 className="fb-page facebook1" 
                 data-href="https://www.facebook.com/CEPREDENAC/" 
