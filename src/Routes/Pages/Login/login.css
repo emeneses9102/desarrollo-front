@@ -32,6 +32,9 @@
 .formulario form{
     width: 80%;
 }
+.form-group input{
+    color: #495057 !important;
+}
 #login{
     background-color: #009FE5;
     border-color: #009FE5;

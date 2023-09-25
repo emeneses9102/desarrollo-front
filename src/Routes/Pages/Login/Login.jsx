@@ -26,7 +26,7 @@ const Login = () => {
         </div>
         <div className="form-group form-check">
           <input type="checkbox" className="form-check-input" id="sessionCheck"/>
-          <label className="form-check-label" for="sessionCheck">Mantener sesión</label>
+          <label className="form-check-label" htmlFor="sessionCheck">Mantener sesión</label>
         </div>
         <button type="submit" id='login' className="btn btn-block btn-primary btn-lg">Iniciar sesión</button>
       </form>
