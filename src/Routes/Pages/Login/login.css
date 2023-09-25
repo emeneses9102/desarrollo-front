@@ -1,0 +1,74 @@
+.container-login{
+    background-color: white;
+    height: 100vh;
+}
+.container-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 25px;
+    padding: 10px;
+}
+.container-logo img{
+    max-width: 50%;
+}
+
+.container-logo span{
+    font-size: 1.2rem;
+    color: #4366A7;
+    font-weight: 550;
+}
+.section-login{
+    background-color: #009FE5;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.formulario form{
+    width: 80%;
+}
+#login{
+    background-color: #009FE5;
+    border-color: #009FE5;
+}
+#login:hover{
+    background-color: #1aadec;
+    
+}
+form{
+    padding: 25px!important;
+}
+
+form img{
+    display: none;
+    
+}
+@media (max-width: 980px) {
+    
+    .container-logo span{
+        font-size: .8rem;
+        
+    }
+    
+}
+
+@media (max-width: 770px) {
+    
+    .section-logo{
+        display: none !important;
+    }
+    form img{
+        display: block;
+        margin-bottom: 10px;
+    }
+    form{
+        padding: 25px!important;
+        width: 90%!important;
+    }
+    
+}

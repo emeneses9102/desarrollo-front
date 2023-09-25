@@ -6,12 +6,12 @@ const NavBar = () => {
     <nav className='navbar navbar-expand-lg __navbar'>
       <div className='container-button p-3 '>
         <div className="contenedor-logo logo-nav">
-            <img src="assets/img/logo_cepredenac.png" alt="logo-cepredenac" />
+            <a href="/"><img src="assets/img/logo_cepredenac.png" alt="logo-cepredenac" /></a>
         </div>
         <div className="links-navbar container">
           <span>Información</span>
           <span className='link-asistencia'><i className="fa-solid fa-plus"></i>Asistencia</span>
-          <span className='link-login' ><i className="fa-solid fa-circle-user"></i>Entrar</span>
+          <span className='link-login' ><i className="fa-solid fa-circle-user"></i><a href="/login">Entrar</a></span>
         </div> 
         <button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span><i className="fa-solid fa-bars"></i></span>

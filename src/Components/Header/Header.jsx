@@ -21,7 +21,7 @@ const Header = () => {
         <div className='navbar nav-initial'>
             <div className="contenedor">
                 <div className="contenedor-logo">
-                    <img src="assets/img/logo_cepredenac.png" alt="logo-cepredenac" />
+                    <a href="/"><img src="assets/img/logo_cepredenac.png" alt="logo-cepredenac" /></a>
                     <div className="contenedor-input">
                         <input type="search" placeholder='Buscar...' />
                         <button><i className="fa-solid fa-magnifying-glass"></i></button>
@@ -30,7 +30,7 @@ const Header = () => {
                 <div className="links">
                     <span>Información</span>
                     <span className='link-asistencia'><i className="fa-solid fa-plus"></i>Asistencia</span>
-                    <span className='link-login' ><i className="fa-solid fa-circle-user"></i>Entrar</span>
+                    <span className='link-login' ><i className="fa-solid fa-circle-user"></i><a href="/login">Entrar</a></span>
                 </div> 
             </div>
 
