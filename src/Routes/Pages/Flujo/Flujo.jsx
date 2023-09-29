@@ -86,6 +86,13 @@ const Flujo = () => {
             
           </div>
         </div>
+        <div className="flujo general">
+          <h2>Flujograma General</h2>
+          <div className="container-fluid">
+            <img className='img-fluid' src="assets/img/Flujograma.png" alt="flujograma" />
+          </div>
+          
+        </div>
     </div>
   )
 }
