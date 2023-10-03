@@ -52,10 +52,10 @@ const Footer = () => {
             <span>Miembros de Cepredenac</span>
             <hr />
             <div className="row m-0 container-logos">
-              <img className='col-md-3 col-sm-6' src="assets/img/logo_conred.png" alt="CONRED" />
-              <img className='col-md-3 col-sm-6' src="assets/img/logo_copeco.png" alt="COPECO" />
-              <img className='col-md-3 col-sm-6' src="assets/img/logo_dgpc.png" alt="DGPC" />
-              <img className='col-md-3 col-sm-6' src="assets/img/logo_sinaproc.png" alt="SINAPROC" />
+              <img className='col-md-3 col-sm-6 p-2' src="assets/img/logo_conred.png" alt="CONRED" />
+              <img className='col-md-3 col-sm-6 p-2' src="assets/img/logo_copeco.png" alt="COPECO" />
+              <img className='col-md-3 col-sm-6 p-2' src="assets/img/logo_dgpc.png" alt="DGPC" />
+              <img className='col-md-3 col-sm-6 p-2' src="assets/img/logo_sinaproc.png" alt="SINAPROC" />
             </div>
           </div>
         </div>
