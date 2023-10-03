@@ -54,6 +54,9 @@
     padding: 15px;
     width: auto;
 }
+.redes span a{
+    color: black;
+}
 
 @media (max-width: 1200px) {
     .footer .container{

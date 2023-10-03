@@ -43,10 +43,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="redes">
-            <span><i className="fa-brands fa-facebook-f"></i></span>
-            <span><i className="fa-brands fa-instagram"></i></span>
-            <span><i className="fa-brands fa-twitter"></i></span>
-            <span><i className="fa-brands fa-youtube"></i></span>
+            <span><a href="https://www.facebook.com/CEPREDENAC/" target='_blank'><i className="fa-brands fa-facebook-f"></i></a></span>
+            <span><a href="https://www.instagram.com/cepredenac" target='_blank'><i className="fa-brands fa-instagram"></i></a></span>
+            <span><a href="https://twitter.com/CEPREDENAC" target='_blank'><i className="fa-brands fa-twitter"></i></a></span>
+            <span><a href="https://www.youtube.com/channel/UCF2sddydog_b59tfc5Liu_w" target='_blank'><i className="fa-brands fa-youtube"></i></a></span>
           </div>
           <div className="miembros">
             <span>Miembros de Cepredenac</span>
