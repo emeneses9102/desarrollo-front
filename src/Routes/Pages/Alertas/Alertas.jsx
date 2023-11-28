@@ -9,45 +9,21 @@ import TableDetailCountry from "../../../Components/TableDetailCountry/TableDeta
 const Alerts = () => {
   return (
     <div>
-      <div className='alertas-container'>
-          <div className="container">
-              <span className='titulo-emergencias'>Alertas en la Región</span>        
-              <span className='subtitle-alerts alertas-container-left'>General por País</span>    
-              <TableAlertsGeneral />
-          </div>
-      </div>
-      <div className='alertas-container'>
-          <div className="container">
-              <span className='subtitle-alerts alertas-container-left'>Alertas en la región</span>
-              <div className='row justify-center'>
-                <div className='col-lg-6 col-12'>
-                  <ChartCircleAlerts />
-                </div>    
-                <div className='col-lg-6 col-12'>
-                  <ChartLineAlerts />
-                </div>    
-              </div>
-          </div>
-      </div>
-      <div className='alertas-container'>
-          <div className="container">
-              <div className='row'>
-                <div className='col-lg-6 col-12 text-center text-lg-left'>
-                    <span className='subtitle-alerts alertas-container-left'>Detalle por País</span>
-                </div>
-                <div className='col-lg-6 col-12 text-center text-lg-right'>
-                  <InputSearch />
-                </div>
-                <div className='row w-100 justify-content-center margin-table-detail-country'>
-                  <TableDetailCountry />
-                </div>
-              </div>
-          </div>
-      </div>
-      <div className='alertas-container'>
-          <div className="container">
-            <span className='subtitle-alerts alertas-container-left'>Mapas</span> 
-          </div>
+      <div className='visorf'>
+          <div className="container" style={{position:"relative"}}>
+              <span className='titulo-visor'>Alertas</span>
+              <div style={{height:"250px",display:"flex", justifyContent:"center", alignItems:"center"}}>
+                <iframe id="optomaFeed" src="https://www.arcgis.com/apps/mapviewer/index.html?url=https://services9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/Satellite_VIIRS_Thermal_Hotspots_and_Fire_Activity/FeatureServer/0" 
+                  scrolling="no"
+                  frameborder="0" 
+                  height="1000px" 
+                  width="80.5%" 
+                  ></iframe>
+            </div>
+        </div>
+        <iframe 
+          style={{border:"none",width:"100px",height:"20px"}} 
+          src="//e.issuu.com/embed.html#3217510/69974367" ></iframe>
       </div>
     </div>
   )
