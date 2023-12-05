@@ -1,29 +1,162 @@
 import React from 'react'
 import './Alertas.css'
-import TableAlertsGeneral from "../../../Components/TableAlertsGeneral/TableAlertsGeneral"
-import ChartCircleAlerts from "../../../Components/ChartCircleAlerts/ChartCircleAlerts"
-import ChartLineAlerts from "../../../Components/ChartLineAlerts/ChartLineAlerts"
-import InputSearch from "../../../Components/InputSearch/InputSearch"
-import TableDetailCountry from "../../../Components/TableDetailCountry/TableDetailCountry"
+import ItemAlert from '../../../Components/ItemsAlert/ItemAlert'
+
 
 const Alerts = () => {
   return (
     <div>
-      <div className='visorf'>
+      <div className='alerta'>
           <div className="container" style={{position:"relative"}}>
-              <span className='titulo-visor'>Alertas</span>
-              <div style={{height:"250px",display:"flex", justifyContent:"center", alignItems:"center"}}>
-                <iframe id="optomaFeed" src="https://www.arcgis.com/apps/mapviewer/index.html?url=https://services9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/Satellite_VIIRS_Thermal_Hotspots_and_Fire_Activity/FeatureServer/0" 
-                  scrolling="no"
-                  frameborder="0" 
-                  height="1000px" 
-                  width="80.5%" 
-                  ></iframe>
-            </div>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Meteorología y Clima</h2>
+                <span className='subtitulo-alerta'>Mapas relacionados con patrones climáticos, ciclones, y datos meteorológicos.</span>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'NOAA GOES'} 
+                    img={'assets/img/alerts/noaa_goes.png'} 
+                    target={'blank'}
+                    url={'https://www.star.nesdis.noaa.gov/goes/sector.php?sat=G16&sector=cam'}
+                  />
+                  <ItemAlert 
+                    titulo={'Centro Clima'} 
+                    img={'assets/img/alerts/centro_clima.png'} 
+                    url={'#'}
+                  />
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Gestión de Desastres</h2>
+                <span className='subtitulo-alerta'>Mapas de situaciones de desastres actuales y potenciales.</span>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'NASA Disaster Mapping'} 
+                    img={'assets/img/alerts/nasa_disaster.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'GWIS'} 
+                    img={'assets/img/alerts/gwis.png'} 
+                    url={'#'}
+                  />
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Análisis de Riesgo de Inundaciones</h2>
+                <span className='subtitulo-alerta'>Mapas de pronósticos y seguimientos de inundaciones.</span>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'Global Floods'} 
+                    img={'assets/img/alerts/global_floods.png'} 
+                    target={'blank'}
+                    url={'https://www.globalfloods.eu/accounts/login/?next=/glofas-forecasting/'}
+                  />
+                  <ItemAlert 
+                    titulo={'GeoGlows'} 
+                    img={'assets/img/alerts/geoglows.png'} 
+                    url={'#'}
+                  />
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Vigilancia de Incendios</h2>
+                <span className='subtitulo-alerta'>Mapas de monitoreo de incendios activos y áreas de riesgo.</span>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'FIRMS'} 
+                    img={'assets/img/alerts/firms.png'} 
+                    url={'#'}
+                  />
+                  
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Otros</h2>
+                <span className='subtitulo-alerta'>Mapas de pronósticos y seguimientos de inundaciones.</span>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'Gestión Integral del Riesgo de Desastres - Nicaragua'}
+                    subtitulo={'Estudios Científicos para la Gestión Integral del Riesgo de Desastres.'} 
+                    img={'assets/img/alerts/gestion_integral_nicaragua.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Análisis multi amenazas - Guatemala'} 
+                    subtitulo={'Panel de Control Geoespacial en ArcGIS'} 
+                    img={'assets/img/alerts/analisis_amenazas_guatemala.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Sistema Nacional de Protección Civil - Panamá'} 
+                    subtitulo={'Panel de Control Geoespacial en ArcGIS'} 
+                    img={'assets/img/alerts/sistema_nacional_panama.png'} 
+                    target={'blank'}
+                    url={'https://www.sinaproc.gob.pa/'}
+                  />
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Monitoreo de Amenazas</h2>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'Ciclones activos'}
+                    img={'assets/img/alerts/ciclones_activos.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Incendios Forestales'} 
+                    img={'assets/img/alerts/incendios_forestales.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Huracanes'} 
+                    img={'assets/img/alerts/huracanes.png'} 
+                    url={'#'}
+                  />
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Hidrometeorológicos</h2>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'Clima'}
+                    img={'assets/img/alerts/clima.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Inundaciones'} 
+                    img={'assets/img/alerts/inundaciones.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Ríos Atmosféricos'} 
+                    img={'assets/img/alerts/rios_atmosfericos.png'} 
+                    url={'#'}
+                  />
+                </div>
+              </section>
+              <section className='text-center'>
+                <h2 className='titulo-alerta'>Geológicos</h2>
+                <div className="items-alerta">
+                  <ItemAlert 
+                    titulo={'Erupciones Volcánicas'}
+                    img={'assets/img/alerts/erupciones_volcanicas.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Sequías'} 
+                    img={'assets/img/alerts/sequias.png'} 
+                    url={'#'}
+                  />
+                  <ItemAlert 
+                    titulo={'Sismos'} 
+                    img={'assets/img/alerts/sismos.png'} 
+                    url={'#'}
+                  />
+                </div>
+              </section>
         </div>
-        <iframe 
-          style={{border:"none",width:"100px",height:"20px"}} 
-          src="//e.issuu.com/embed.html#3217510/69974367" ></iframe>
+       
       </div>
     </div>
   )
