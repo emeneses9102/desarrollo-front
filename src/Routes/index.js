@@ -14,6 +14,7 @@ import Alertas from "./Pages/Alertas/Alertas";
 import Visor from "./Pages/Visor/Visor";
 import Flujo from "./Pages/Flujo/Flujo";
 import Login from "./Pages/Login/Login";
+import TipoAlerta from "./Pages/TipoAlerta/TipoAlerta.jsx";
 
 const Routes = () => {
   const { user } = useSelector((state) => state.users);
@@ -39,6 +40,7 @@ const Routes = () => {
         <Route exact path="/" element={<Inicio />} />
         <Route exact path="/manejo-emergencia" element={<Emergencias />} />
         <Route exact path="/alertas" element={<Alertas />} />
+        <Route  path="/alertas/:tipoAlerta" element={<TipoAlerta />} />
         <Route exact path="/visor" element={<Visor />} />
         <Route exact path="/flujo" element={<Flujo />} />
       </Switch>

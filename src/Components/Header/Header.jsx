@@ -21,7 +21,7 @@ const Header = () => {
         <div className='navbar nav-initial'>
             <div className="contenedor">
                 <div className="contenedor-logo">
-                    <a href="/"><img src="assets/img/logo_cepredenac.png" alt="logo-cepredenac" /></a>
+                    <a href="/"><img src="/assets/img/logo_cepredenac.png" alt="logo-cepredenac" /></a>
                     <div className="contenedor-input">
                         <input type="search" placeholder='Buscar...' />
                         <button><i className="fa-solid fa-magnifying-glass"></i></button>

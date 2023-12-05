@@ -21,7 +21,7 @@ const Alerts = () => {
                   <ItemAlert 
                     titulo={'Centro Clima'} 
                     img={'assets/img/alerts/centro_clima.png'} 
-                    url={'#'}
+                    url={'/alertas/centro_lima'}
                   />
                 </div>
               </section>
@@ -32,12 +32,12 @@ const Alerts = () => {
                   <ItemAlert 
                     titulo={'NASA Disaster Mapping'} 
                     img={'assets/img/alerts/nasa_disaster.png'} 
-                    url={'#'}
+                    url={'/alertas/nasa_disaster'}
                   />
                   <ItemAlert 
                     titulo={'GWIS'} 
                     img={'assets/img/alerts/gwis.png'} 
-                    url={'#'}
+                    url={'/alertas/gwis'}
                   />
                 </div>
               </section>
@@ -54,7 +54,7 @@ const Alerts = () => {
                   <ItemAlert 
                     titulo={'GeoGlows'} 
                     img={'assets/img/alerts/geoglows.png'} 
-                    url={'#'}
+                    url={'/alertas/geoglows'}
                   />
                 </div>
               </section>
@@ -65,7 +65,7 @@ const Alerts = () => {
                   <ItemAlert 
                     titulo={'FIRMS'} 
                     img={'assets/img/alerts/firms.png'} 
-                    url={'#'}
+                    url={'/alertas/firms'}
                   />
                   
                 </div>
@@ -78,13 +78,13 @@ const Alerts = () => {
                     titulo={'Gestión Integral del Riesgo de Desastres - Nicaragua'}
                     subtitulo={'Estudios Científicos para la Gestión Integral del Riesgo de Desastres.'} 
                     img={'assets/img/alerts/gestion_integral_nicaragua.png'} 
-                    url={'#'}
+                    url={'/alertas/gestion_nicaragua'}
                   />
                   <ItemAlert 
                     titulo={'Análisis multi amenazas - Guatemala'} 
                     subtitulo={'Panel de Control Geoespacial en ArcGIS'} 
                     img={'assets/img/alerts/analisis_amenazas_guatemala.png'} 
-                    url={'#'}
+                    url={'/alertas/amenazas_guatemala'}
                   />
                   <ItemAlert 
                     titulo={'Sistema Nacional de Protección Civil - Panamá'} 
